@@ -1,16 +1,16 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
+import mm from "../assets/portfolio/robit.jpg";
 import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import navbar from "../assets/portfolio/her.jpg";
+import reactParallax from "../assets/portfolio/food.jpg";
+import reactSmooth from "../assets/portfolio/travia.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: mm,
     },
     {
       id: 2,
@@ -48,23 +48,63 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+     <div key={1} className="shadow-md shadow-gray-600 rounded-lg">
               <img
-                src={src}
+                src={mm}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+              <div className="flex items-center justify-center"><a href=" https://mohamed3ali.github.io/Html5-Css3-JS-SASS/"  target="_blank"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">     Demo
+                </button></a>
+             
+            <a href="https://github.com/mohamed3ali/Html5-Css3-JS-SASS"> <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
-                </button>
+                </button></a>   
               </div>
             </div>
-          ))}
+            <div key={2} className="shadow-md shadow-gray-600 rounded-lg">
+              <img
+                src={reactParallax}
+                alt=""
+                className="rounded-md duration-200 hover:scale-105"
+              />
+              <div className="flex items-center justify-center"><a href="  https://mohamed3ali.github.io/Javascript-API/"  target="_blank"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">     Demo
+                </button></a>
+             
+            <a href="https://github.com/mohamed3ali/Javascript-API"> <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Code
+                </button></a>   
+              </div>
+            </div>
+
+            <div key={3} className="shadow-md shadow-gray-600 rounded-lg">
+              <img
+                src={navbar}
+                alt=""
+                className="rounded-md duration-200 hover:scale-105"
+              />
+              <div className="flex items-center justify-center"><a href="https://mohamed3ali.github.io/Fashion-E-commerce-/"  target="_blank" ><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">     Demo
+                </button></a>
+             
+            <a href="https://github.com/mohamed3ali/Fashion-E-commerce-"> <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Code
+                </button></a>   
+              </div>
+            </div>
+            <div key={4} className="shadow-md shadow-gray-600 rounded-lg">
+              <img
+                src={reactSmooth}
+                alt=""
+                className="rounded-md duration-200 hover:scale-105"
+              />
+              <div className="flex items-center justify-center"><a href="https://mohamed3ali.github.io/travel.javascript-project/"  target="_blank"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">     Demo
+                </button></a>
+             
+            <a href="https://github.com/mohamed3ali/travel.javascript-project"> <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Code
+                </button></a>   
+              </div>
+            </div>
         </div>
       </div>
     </div>
